@@ -4,7 +4,9 @@ from pypdf import PdfReader
 import docx
 from pptx import Presentation
 
-openai.api_key = "YOUR_API_KEY_HERE"
+import os
+openai.api_key = os.environ.get("OPENAI_API_KEY")
+
 
 # -------------------------------------------------------------------
 # Helper: extract text from PDFs, Word docs, PPTs
