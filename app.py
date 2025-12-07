@@ -83,7 +83,7 @@ Include:
 """
 
     response = openai.ChatCompletion.create(
-        model="gpt-4o-mini",
+        model="gpt-4o",
         messages=[{"role": "user", "content": prompt}]
     )
 
@@ -125,7 +125,7 @@ Please give:
 """
 
     response = openai.ChatCompletion.create(
-        model="gpt-4o-mini",
+        model="gpt-4o",
         messages=[{"role": "user", "content": prompt}],
     )
 
